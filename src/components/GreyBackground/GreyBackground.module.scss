@@ -1,0 +1,6 @@
+@import "../../styles/colors.scss";
+
+.greyBackground {
+    background-color: map-get($colors , "greyBackground" );
+    min-height: 100vh;
+}
