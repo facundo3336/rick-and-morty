@@ -3,7 +3,7 @@ import styles from "./CharacterCard.module.scss";
 interface Props {
   imageUrl: string;
   title: string;
-  status: "Alive" | "Dead";
+  status: "Alive" | "Dead" | "unknown";
   lastLocation: string;
   firstSeen: string;
   specie: string;
@@ -19,7 +19,10 @@ export const CharacterCard = ({
 }: Props) => {
   return (
     <div className={styles.card}>
-      <img className={styles.image} src={imageUrl} alt="" />
+      <div
+        className={styles.image}
+        style={{ backgroundImage: `url(${imageUrl})` }}
+      ></div>
       <div className={styles.cardContent}>
         <div className={styles.cardSection}>
           <h3>{title}</h3>

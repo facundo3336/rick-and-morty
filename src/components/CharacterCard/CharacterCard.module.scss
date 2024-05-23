@@ -12,6 +12,9 @@
 
 .image {
     width: 280px;
+    height: 280px;
+    background-position: center center;
+    background-size: cover;
 }
 
 .subtitles {
@@ -59,6 +62,10 @@
 
 .Dead {
     background-color: map-get($colors , "brown");
+}
+
+.unknown {
+    background-color: map-get($colors , "lighterGrey");
 }
 
 @media screen and (min-width: 1340px) {
